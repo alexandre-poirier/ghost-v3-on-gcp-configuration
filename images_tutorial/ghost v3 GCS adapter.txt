@@ -1,0 +1,1 @@
+See https://www.npmjs.com/package/ghost-v3-google-cloud-storage
