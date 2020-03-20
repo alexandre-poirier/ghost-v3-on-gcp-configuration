@@ -1,0 +1,35 @@
+{
+    "url": "<DOMAIN_URL>",
+    "fileStorage": false,
+    "database": {
+        "client": "mysql",
+        "connection": {
+            "socketPath": "/cloudsql/<PROJECT_NAME>:<PROJECT_REGION>:<DB_MYSQL_INSTANCE_NAME>",
+            "user"      : "<DB_USER_NAME>",
+            "password"  : "<DB_PASSWORD>",
+            "database"  : "<DB_SCHEMA_NAME>",
+            "charset"   : "utf8"
+        },
+        "debug": false
+    },
+    "server": {
+        "host": "0.0.0.0",
+        "port": "8080"
+    },
+    "paths": {
+        "contentPath": "content/"
+    },
+    "logging": {
+        "level": "info",
+        "rotation": {
+            "enabled": true
+        },
+        "transports": ["stdout"]
+    },
+    "storage": {
+        "active": "gcs",
+        "gcs": {
+          "bucket": "<PUBLIC_BUCKET_NAME>"
+        }
+      }
+}

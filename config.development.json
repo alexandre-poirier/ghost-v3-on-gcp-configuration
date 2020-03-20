@@ -1,0 +1,29 @@
+{
+    "url": "http://localhost:2368",
+    "database": {
+        "client": "mysql",
+        "connection": {
+            "host"     : "127.0.0.1",
+            "port"     : "3306",
+            "user"     : "<LOCAL_DB_USER_NAME>",
+            "password" : "<LOCAL_DB_PASSWORD>",
+            "database" : "<LOCAL_DB_SCHEMA_NAME>"
+        }
+    },
+    "paths": {
+        "contentPath": "content/"
+    },
+    "privacy": {
+        "useRpcPing": false,
+        "useUpdateCheck": true
+    },
+    "useMinFiles": false,
+    "caching": {
+        "theme": {
+            "maxAge": 0
+        },
+        "admin": {
+            "maxAge": 0
+        }
+    }
+}
